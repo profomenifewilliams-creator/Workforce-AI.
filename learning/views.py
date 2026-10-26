@@ -28,7 +28,7 @@ Never save or request personal information. Keep explanations warm, accurate and
 
 
 def home(request):
-    return render(request, "learning/home.html", {
+    return render(request, "home.html", {
         "openai_enabled": bool(os.environ.get("OPENAI_API_KEY")),
         "year": datetime.now().year,
     })
